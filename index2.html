@@ -67,12 +67,15 @@ body::before{
 .logo{
     color:#00ffc3;
     text-shadow:0 0 10px #00ffc3;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .nav-links a{
     color:#aaa;
     margin:0 15px;
     text-decoration:none;
+    font-weight: 400;
 }
 
 .nav-links a:hover{
@@ -191,6 +194,16 @@ body::before{
         flex-direction:column;
         text-align:center;
     }
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+
+    .logo{
+        margin-bottom:10px;
+    }
 }
 </style>
 </head>
@@ -205,12 +218,13 @@ body::before{
 
 <!-- NAVBAR -->
 <div class="navbar">
-    <div class="logo">🐆 Jaguar AI</div>
+    <div class="logo" onclick="window.location.href='index2.html'">🐆 Jaguar AI</div>
     <div class="nav-links">
-        <a href="#">Services</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Project</a>
-        <a href="#">About</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="contact.html">Contact</a>
     </div>
 </div>
 
@@ -222,8 +236,8 @@ body::before{
         <p>Next-gen intelligent assistant with futuristic UI.</p>
 
         <div>
-            <a href="#" class="btn">Launch</a>
-            <a href="#" class="btn">Docs</a>
+            <a href="projects.html" class="btn">View Projects</a>
+            <a href="about.html" class="btn">About Me</a>
         </div>
     </div>
 
